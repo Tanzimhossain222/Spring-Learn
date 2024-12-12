@@ -9,6 +9,10 @@ public class Laptop {
         System.out.println("Booting...");
     }
 
+    public  void  compile() {
+        System.out.println("Compiling...");
+    }
+
     public void shutdown() {
         System.out.println("Shutting down...");
     }

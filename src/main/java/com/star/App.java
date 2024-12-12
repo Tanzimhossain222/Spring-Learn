@@ -14,11 +14,6 @@ public class App
         System.out.println(obj.getAge());
         System.out.println(obj.getName());
 
-//        obj.greeting();
-//        obj.code();
 
-//        Laptop laptop = (Laptop) context.getBean("laptop");
-//        laptop.boot();
-//        laptop.shutdown();
     }
 }

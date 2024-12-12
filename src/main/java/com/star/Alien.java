@@ -5,16 +5,16 @@ public class Alien {
     private int age;
     private  String name;
 
+    private  Laptop lap;
+
     public Alien() {
         System.out.println("Alien object created!");
     }
 
-    public void greeting() {
-        System.out.println("Hello World!");
-    }
-
     public void code() {
         System.out.println("Coding...");
+        lap.boot();
+        lap.compile();
     }
 
     public int getAge() {
@@ -34,4 +34,15 @@ public class Alien {
         System.out.println("Setting name...");
         this.name = name;
     }
+
+    public Laptop getLap() {
+        return lap;
+    }
+
+    public void setLap(Laptop lap) {
+        System.out.println("Setting laptop...");
+        this.lap = lap;
+    }
+
+
 }
