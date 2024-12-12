@@ -1,5 +1,7 @@
 package com.star;
 
+import java.beans.ConstructorProperties;
+
 public class Alien {
 
     private int age;
@@ -9,6 +11,13 @@ public class Alien {
 
     public Alien() {
         System.out.println("Alien object created!");
+    }
+
+    @ConstructorProperties({"age", "name", "lap"})
+    public Alien(int age, String name, Laptop lap) {
+        this.age = age;
+        this.name = name;
+        this.lap = lap;
     }
 
     public void code() {
