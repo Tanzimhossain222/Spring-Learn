@@ -1,19 +1,15 @@
 package com.star;
 
-public class Laptop {
-    public Laptop() {
-        System.out.println("Laptop object created!");
-    }
+public class Laptop implements Computer {
 
+    @Override
     public void boot() {
-        System.out.println("Booting...");
+        System.out.println("Laptop Booting...");
     }
 
-    public  void  compile() {
-        System.out.println("Compiling...");
+    @Override
+    public void  compile() {
+        System.out.println("Laptop Compiling Code...");
     }
 
-    public void shutdown() {
-        System.out.println("Shutting down...");
-    }
 }
