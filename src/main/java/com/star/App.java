@@ -13,7 +13,6 @@ public class App
 
         Desktop dt = context.getBean(Desktop.class);
         dt.boot();
-
         dt.compile();
 
     }
