@@ -2,6 +2,9 @@ package com.star;
 
 public class Desktop implements Computer {
 
+   public Desktop() {
+        System.out.println("Desktop Constructor");
+    }
 
     @Override
     public void boot() {
