@@ -11,15 +11,9 @@ public class App
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Alien obj = (Alien) context.getBean("alien");
-        obj.code();
-
         Desktop dt = context.getBean(Desktop.class);
         dt.boot();
         dt.compile();
-//        System.out.println(obj.getAge());
-//        System.out.println(obj.getName());
 
 
     }
