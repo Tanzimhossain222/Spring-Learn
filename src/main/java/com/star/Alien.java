@@ -1,6 +1,9 @@
 package com.star;
+import org.springframework.stereotype.Component;
+
 import java.beans.ConstructorProperties;
 
+@Component
 public class Alien {
 
     private int age;
@@ -8,12 +11,6 @@ public class Alien {
 
     private  Computer com;
 
-//    @ConstructorProperties({"age", "name", "lap"})
-//    public Alien(int age, String name, Computer com) {
-//        this.age = age;
-//        this.name = name;
-//        this.com = com;
-//    }
 
     public void code() {
         com.boot();
